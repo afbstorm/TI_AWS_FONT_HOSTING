@@ -46,9 +46,12 @@ export class LandingComponent {
 
   onLogin() {
     if (this.loginForm.valid) {
-      this.authService.login(this.loginForm.value).subscribe(() => {
-        this.router.navigate(['/movies']);
-      });
+      this.authService.login(this.loginForm.value).subscribe({
+        next: (value) => {
+          localStorage.setItem('authToken', value.access_token)
+          this.router.navigate(['/movies']);
+        }
+      })
     }
   }
 
