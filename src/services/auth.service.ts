@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://6r62rcagaz.eu-west-3.awsapprunner.com/';
+  private apiUrl = 'https://6r62rcagaz.eu-west-3.awsapprunner.com';
 
   constructor(private http: HttpClient) {}
   getToken(): string | null {
