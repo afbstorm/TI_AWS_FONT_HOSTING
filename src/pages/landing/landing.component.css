@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+}
+
+.toggle-text {
+  color: #e0e0e0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle-text:hover {
+  cursor: pointer;
+}

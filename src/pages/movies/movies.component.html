@@ -1,0 +1,13 @@
+<mat-card class="movies-container">
+  <mat-card-title>Liste des films</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      @for (movie of movies; track movie) {
+        <mat-list-item (click)="openMovieModal(movie)">
+          {{ movie.title }}
+        </mat-list-item>
+      }
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+

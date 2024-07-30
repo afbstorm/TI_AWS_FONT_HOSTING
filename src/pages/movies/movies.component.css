@@ -1,0 +1,15 @@
+.movies-container {
+  margin: 20px;
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+
+mat-list-item:hover {
+  background-color: #e0e0e0;
+}
+
+mat-icon {
+  margin-right: 10px;
+}

@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>{{ movieForm.get('title')?.value }}</h2>
+<mat-dialog-content [formGroup]="movieForm">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Distribution</mat-label>
+    <textarea matInput formControlName="distribution"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Genres</mat-label>
+    <textarea matInput formControlName="genres"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Duration</mat-label>
+    <input matInput formControlName="duration">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Cancel</button>
+<!--  <button mat-raised-button color="primary" (click)="updateMovie()">OK</button>-->
+</mat-dialog-actions>
