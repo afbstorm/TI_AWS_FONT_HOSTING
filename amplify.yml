@@ -5,9 +5,9 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo "Installing Node.js 20.x"
-            - curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-            - sudo apt-get install -y nodejs
+            - echo "Using Node.js version 20.x"
+            - nvm install 20
+            - nvm use 20
             - node -v
             - npm install
         build:
