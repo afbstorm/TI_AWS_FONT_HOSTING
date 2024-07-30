@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - appRoot: .
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "Installing Node.js 20.x"
+            - curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+            - sudo apt-get install -y nodejs
+            - node -v
+            - npm install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
