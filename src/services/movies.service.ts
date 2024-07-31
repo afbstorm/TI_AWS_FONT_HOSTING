@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class MoviesService {
-  private apiUrl = 'https://6r62rcagaz.eu-west-3.awsapprunner.com';
+  private apiUrl = 'https://7ttzdic3ae.eu-west-3.awsapprunner.com';
 
   constructor(private http: HttpClient) {}
 
@@ -15,3 +15,4 @@ export class MoviesService {
   }
 
 }
+
